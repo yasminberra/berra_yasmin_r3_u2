@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de la persona Usuaria</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1 id="titulo">Registro de la persona Usuaria</h1>
+
+        <p class="descripcion">
+            Completa el siguiente formulario para crear tu registro.
+        </p>
+
+        <form>
+
+            <div class="grupo">
+
+                <label for="nombre">Nombre:</label>
+
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+
+            </div>
+
+
+            <div class="grupo">
+
+                <label for="apellido">Apellido:</label>
+
+                <input 
+                    type="text" 
+                    id="apellido" 
+                    name="apellido"
+                    placeholder="Escribe tu apellido"
+                    required
+                >
+
+            </div>
+
+
+            <div class="grupo">
+
+                <label for="correo">Correo electrónico:</label>
+
+                <input 
+                    type="email" 
+                    id="correo" 
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="grupo">
+
+                <label for="contrasena">Contraseña:</label>
+
+                <input 
+                    type="password" 
+                    id="contrasena" 
+                    name="contrasena"
+                    placeholder="Escribe una contraseña"
+                    required
+                >
+
+            </div>
+
+
+            <div class="grupo">
+
+                <label for="descripcion">Cuéntanos sobre ti:</label>
+
+                <textarea 
+                    id="descripcion" 
+                    name="descripcion"
+                    placeholder="Escribe una breve descripción sobre ti..."
+                    rows="5"
+                ></textarea>
+
+            </div>
+
+
+            <div class="grupo">
+
+                <label>Selecciona tus intereses:</label>
+
+                <div class="intereses">
+
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="intereses" 
+                            value="tecnologia"
+                        >
+                        Tecnología
+                    </label>
+
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="intereses" 
+                            value="arte"
+                        >
+                        Arte
+                    </label>
+
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="intereses" 
+                            value="deporte"
+                        >
+                        Deporte
+                    </label>
+
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="intereses" 
+                            value="musica"
+                        >
+                        Música
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <button type="submit" id="boton">
+                Registrarse
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
